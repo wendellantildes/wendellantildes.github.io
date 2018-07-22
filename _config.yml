@@ -1,0 +1,5 @@
+theme: jekyll-theme-dinky
+title: Wendell's code recipe
+description: This is a little site about my projects on github. Feel free to comment and exchange some ideas.
+permalink: /blog/:year/:month/:day/:title
+github_username: wendellantildes

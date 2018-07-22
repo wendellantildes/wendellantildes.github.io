@@ -1,0 +1,37 @@
+---
+layout: default
+title: Latest posts
+---
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+
+{% include header.html %}
+
+<h1>{{ page.title }}</h1>
+
+
+
+
+
+{% for post in site.posts %}
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Programming</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                        <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endfor %}

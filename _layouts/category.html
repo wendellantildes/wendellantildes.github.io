@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">{{page.category  | capitalize }}</li>
+    </ol>
+</nav>
+
+{% for post in site.categories[page.category] %}
+  <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+{% endfor %}
