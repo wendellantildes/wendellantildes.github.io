@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "A folder listener in .Net Core and .Net Standard."
-date: 2018-07-22
+title: "A true json validator for .Net Core Web Api"
+date: 2018-10-13
 categories: programming 
 tags: [c#, .net, .netcore, leadingZero, webApi]
 
 ---
 
-Salut, ça va 
+Salut, ça va?
 
 Today we are going to discuss about a problem we face when we send an octal or an hexadecimal number in json. According to the official json specification , it’s not allowed to send these numbers in json, just decimal numbers. 
 
